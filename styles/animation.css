@@ -1,0 +1,106 @@
+/* ==================================================
+=====// Header Section Animation CSS : Start //======
+===================================================== */
+@keyframes header_animation_ball {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-250px, -250px) rotate(90deg);
+    -webkit-transform: translate(-250px, -250px) rotate(90deg);
+    -moz-transform: translate(-250px, -250px) rotate(90deg);
+    -ms-transform: translate(-250px, -250px) rotate(90deg);
+    -o-transform: translate(-250px, -250px) rotate(90deg);
+  }
+  20% {
+    transform: translate(-900px, 340px) rotate(-180deg);
+    -webkit-transform: translate(-900px, 340px) rotate(-180deg);
+    -moz-transform: translate(-900px, 340px) rotate(-180deg);
+    -ms-transform: translate(-900px, 340px) rotate(-180deg);
+    -o-transform: translate(-900px, 340px) rotate(-180deg);
+  }
+  30% {
+    transform: translate(-1500px, 100px) rotate(-180deg);
+    -webkit-transform: translate(-1500px, 100px) rotate(-180deg);
+    -moz-transform: translate(-1500px, 100px) rotate(-180deg);
+    -ms-transform: translate(-1500px, 100px) rotate(-180deg);
+    -o-transform: translate(-1500px, 100px) rotate(-180deg);
+  }
+  35% {
+    transform: translate(-1500px, 100px) rotate(-180deg);
+    -webkit-transform: translate(-1500px, 100px) rotate(-180deg);
+    -moz-transform: translate(-1500px, 100px) rotate(-180deg);
+    -ms-transform: translate(-1500px, 100px) rotate(-180deg);
+    -o-transform: translate(-1500px, 100px) rotate(-180deg);
+  }
+  45% {
+    transform: translate(-2000px, -300px) rotate(-180deg);
+    -webkit-transform: translate(-2000px, -300px) rotate(-180deg);
+    -moz-transform: translate(-2000px, -300px) rotate(-180deg);
+    -ms-transform: translate(-2000px, -300px) rotate(-180deg);
+    -o-transform: translate(-2000px, -300px) rotate(-180deg);
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    opacity: 0;
+    z-index: -1000;
+  }
+  85% {
+    opacity: 0;
+    z-index: 5;
+  }
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+@keyframes ball_rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes header_animation_bg {
+  from {
+    transform: rotateX(40deg);
+    -webkit-transform: rotateX(40deg);
+    -moz-transform: rotateX(40deg);
+    -ms-transform: rotateX(40deg);
+    -o-transform: rotateX(40deg);
+  }
+  to {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+  }
+}
+
+/* ==================================================
+=====// Header Section Animation CSS : End //========
+===================================================== */

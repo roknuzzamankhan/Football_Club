@@ -1,0 +1,536 @@
+/* ==================================================
+==============// Basic structure setup //============ 
+===================================================== */
+
+
+/* Imported fonts here: >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* ==================================================
+==============// Google fonts Infos //===============
+*
+*   font-family: 'Poppins', sans-serif;
+*   font-weight: 100,200,300,400,500,600,700,800,900;
+*
+===================================================== */
+
+
+/* ==================================================
+==============// CSS TABLE OF CONTENT //=============
+*   
+*   ----- FIXING CSS SECTION -----
+*   1.  Fixing CSS
+*
+*   ----- COMMON CSS SECTION -----
+*   2.  Custom CSS
+*   3.  Common CSS 
+*  
+*   ----- HEADER SECTION -----
+*   4. Header Section
+*   5. Header Text
+*   6. Heading Images
+*   7. Nav Section
+*
+*   ----- MAIN SECTION -----
+*   8. Player Card Section
+*   9. Player Info Box Design 
+*  10. Highlight Section
+*  11. Upcoming Matches Section
+*  12. Upcoming Match Box Design
+*  13. Sponsors Section
+*   
+*   ----- FOOTER SECTION -----
+*   14. Social Link Design
+*   15. Copyright Infos Design
+*   
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>>>>>>>// Fixing CSS : Start //<<<<<<<<<<<<<
+===================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ==================================================
+>>>>>>>>>>>>>>>>// Fixing CSS : End //<<<<<<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>// Custom CSS Properties : Start //<<<<<<<<
+===================================================== */
+:root {
+  --header_background_color: #2d25a0;
+  --button_color: #e02c6d;
+  --normal_text_color: #6c6c6c;
+  --match_sign: #808080;
+  --social_media_icon: #969bab;
+  --social_media_icon_bg: #e7e7e8;
+}
+/* ==================================================
+>>>>>>>>>>// Custom CSS Properties : End //<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>>>>>// Common CSS : Start //<<<<<<<<<<<<<<<
+===================================================== */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.button {
+  height: 44px;
+  background-color: var(--button_color);
+  text-align: center;
+  line-height: 44px;
+}
+
+.normal-text {
+  font-size: 16px;
+  color: var(--normal_text_color);
+}
+/* ==================================================
+>>>>>>>>>>>>>>// Common CSS : End //<<<<<<<<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+===========// Header Section CSS : Start //==========
+===================================================== */
+header {
+  background-color: var(--header_background_color);
+  padding: 42px 0 0 0;
+  height: 650px;
+}
+
+#heading_items {
+  display: flex;
+  padding: 67px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* >>>>>>>> Heading Texts <<<<<<<< */
+
+#heading_text h1,
+#heading_text p {
+  color: #fff;
+}
+
+#heading_text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  width: 485px;
+  padding: 0 0 27px 0;
+  line-height: 80px;
+}
+
+#heading_text .button {
+  width: 168px;
+  display: inline-block;
+}
+
+#heading_text a i {
+  margin: 0 0 0 8px;
+}
+
+.heading_img {
+  width: 556px;
+  height: 438px;
+  position: relative;
+}
+
+header:hover .header_image_bg {
+  transform: rotateX(30deg);
+  -webkit-transform: rotateX(30deg);
+  -moz-transform: rotateX(30deg);
+  -ms-transform: rotateX(30deg);
+  -o-transform: rotateX(30deg);
+}
+
+header:hover .header_image_ball {
+  animation: header_animation_ball 5s ease-in-out;
+  -webkit-animation: header_animation_ball 5s ease-in-out;
+}
+
+/* >>>>>>>> Heading Images <<<<<<<< */
+
+.heading_img img {
+  display: inline-block;
+}
+
+.header_image_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 556px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.header_image_man {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+}
+
+.header_image_ball {
+  position: absolute;
+  top: 89px;
+  left: 15px;
+  width: 70px;
+  animation: ball_rotate 5s infinite linear;
+  -webkit-animation: ball_rotate 5s infinite linear;
+}
+
+/* ==================================================
+===========// Header Section CSS : End //============
+===================================================== */
+
+
+/* ==================================================
+===========// Nav Section CSS : Start //============
+===================================================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 587px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav .button {
+  width: 123px;
+}
+
+nav a i {
+  font-size: 17px;
+  margin: 0 8px 0 0;
+}
+/* ==================================================
+===========// Nav Section CSS : End //===============
+===================================================== */
+
+
+/* ==================================================
+===========// Main Section CSS : Start //===========
+===================================================== */
+main {
+  margin: 70px 0 158px 0;
+}
+/* ==================================================
+---------// Player Card Section CSS : Start //-------
+===================================================== */
+#player_infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 27px;
+  justify-content: space-between;
+  margin: 0px 0 165px 0;
+}
+
+/* >>>>>>>> Players Info Box Design <<<<<<<< */
+
+.player_infos {
+  width: 330px;
+  height: 474px;
+  padding: 15px 15px 33px 15px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 50px -25px #000;
+}
+
+.player_infos img {
+  width: 100%;
+}
+
+.player_infos h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #18191f;
+  margin: 16px 0 10px 0;
+}
+
+.player_infos p {
+  width: 300px;
+  height: 104px;
+  line-height: 26px;
+  overflow: hidden;
+}
+
+.player_infos a {
+  display: inline-block;
+  font-weight: 500;
+  color: #000;
+  margin: 6px 0 0 0;
+}
+/* ==================================================
+---------// Player Card Section CSS : End //---------
+===================================================== */
+
+
+/* ==================================================
+---------// Highlights Section CSS : Start //--------
+===================================================== */
+#highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0 165px 0;
+}
+
+#highlights_text h1 {
+  width: 470px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+#highlights_text p {
+  width: 404px;
+  line-height: 28px;
+  margin: 8px 0 24px 0;
+}
+
+#highlight .button {
+  display: inline-block;
+  width: 173px;
+}
+
+#highlight .button i {
+  margin: 0 0 0 8px;
+}
+
+#highlights_img {
+  width: 567px;
+}
+
+#highlights_img img {
+  width: 100%;
+}
+/* ==================================================
+---------// Highlights Section CSS : End //----------
+===================================================== */
+
+
+/* ==================================================
+------// Upcoming Matches Section CSS : Start //-----
+===================================================== */
+#upcoming_matches {
+  border: 10px solid var(--header_background_color);
+  width: 100%;
+  height: 411px;
+  position: relative;
+  padding: 20px;
+  margin: 0px 0 165px 0;
+}
+
+#upcoming_matches h2 {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  position: absolute;
+  top: -25px;
+  left: 450px;
+}
+
+/* >>>>>>>> Upcoming Match Box Design <<<<<<<< */
+
+
+#upcoming_matches .time {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+}
+
+#upcoming_matches .time span {
+  color: white;
+  padding: 3px 10px;
+  background-color: var(--match_sign);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#upcoming_matches img {
+  width: 70px;
+}
+
+.next_teams,
+.previous_teams {
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+}
+
+.stadium {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+#score {
+  font-size: 30px;
+}
+/* ==================================================
+------// Upcoming Matches Section CSS : End //-------
+===================================================== */
+
+
+/* ==================================================
+----------// Sponsors Section CSS : Start //---------
+===================================================== */
+#sponsored_section {
+  margin: 0 0 165px 0;
+}
+
+#sponsored_section p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+#sponsored_logos {
+  display: grid;
+  grid-template-areas:
+    " . nike hyundai ea ."
+    ". trivago . cocacola . ";
+  justify-content: space-between;
+  width: 100%;
+}
+
+#sponsored_logos img {
+  margin: 20px auto;
+}
+
+#sponsored_logos img:nth-child(1n) {
+  width: 100px;
+  grid-area: nike;
+}
+#sponsored_logos img:nth-child(2n) {
+  width: 150px;
+  grid-area: hyundai;
+}
+#sponsored_logos img:nth-child(3n) {
+  width: 100px;
+  grid-area: ea;
+}
+
+#sponsored_logos img:nth-child(4n) {
+  width: 150px;
+  grid-area: trivago;
+}
+#sponsored_logos img:nth-child(5n) {
+  width: 150px;
+  grid-area: cocacola;
+}
+
+/* ==================================================
+----------// Sponsors Section CSS : End //-----------
+===================================================== */
+
+
+/* ==================================================
+===========// Main Section CSS : End //==============
+===================================================== */
+
+
+/* ==================================================
+===========// Footer Section CSS : End //============
+===================================================== */
+footer {
+  padding: 0 0 63px 0;
+}
+
+.footer_infos {
+  margin: 0 auto;
+  width: 483px;
+}
+
+.footer_infos img {
+  width: 100%;
+  margin-right: 0px;
+}
+
+/* >>>>>>>> Social Links Design <<<<<<<< */
+
+#social_media_links {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px 0 20px 0;
+}
+
+#social_media_links a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: var(--social_media_icon_bg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 17px;
+  text-align: center;
+  line-height: 32px;
+}
+
+#social_media_links i {
+  color: var(--social_media_icon);
+}
+
+/* >>>>>>>> Copyright Infos Design <<<<<<<< */
+
+.footer_infos p {
+  text-align: center;
+}
+/* ==================================================
+===========// Footer Section CSS : End //============
+===================================================== */
